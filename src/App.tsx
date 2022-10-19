@@ -1,5 +1,6 @@
 
 import { Envelope, Lock } from 'phosphor-react';
+import { Button } from './components/Button';
 import { Checkbox } from './components/Checkbox';
 import { Heading } from './components/Heading';
 import { Logo } from './components/logo';
@@ -49,9 +50,19 @@ export function App() {
         <Checkbox id='remember'/>
         <Text size='sm' className='text-gray-200'>Lembrar de mim por 30 dias</Text>
       </label>
-     
-    </form>
 
+
+      <Button type='submit' className='mt-4'> Entrar na Plataforma</Button>
+      </form>
+    <footer className='flex flex-col items-center gap-4 mt-8'>
+      <Text asChild size='sm'/>
+      <a href='' className='text-gray-400 underline hover:text-gray-200'>Esqueceu sua senha?</a>
+      <Text/>
+      <Text asChild size='sm'/>
+      <a href=''className='text-gray-400 underline hover:text-gray-200' >Não possui conta? crie uma agora</a>
+      <Text/>
+
+    </footer>
 
    </div>
   )
